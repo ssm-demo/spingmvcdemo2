@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("web.example.controller")
+@ComponentScan("web.example.*")
 public class DispatcherServletXml extends WebMvcConfigurerAdapter {
     @Bean
     public ViewResolver viewResolver(){
